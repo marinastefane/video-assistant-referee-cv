@@ -20,7 +20,7 @@ HOUGH_MIN_LINE_LENGTH = 80
 HOUGH_MAX_LINE_GAP = 12
 
 # YOLO
-YOLO_MODEL_PATH = "yolov8s.pt"
+YOLO_MODEL_PATH = "models/yolov8s.pt"
 
 # Saídas
 OUT_VIDEO = "output/video_out.mp4"

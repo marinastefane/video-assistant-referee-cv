@@ -1,16 +1,16 @@
 import cv2
 import os
-from player_detection import get_detector
-from ball_detection import BallDetector
-from field_detection import detect_field_mask
-from field_map import create_2d_map
+from src.player_detection import get_detector
+from src.ball_detection import BallDetector
+from src.field_detection import detect_field_mask
+from src.field_map import create_2d_map
 
 # --------------------------------------
 # CONFIGURAÇÕES
 # --------------------------------------
 IMAGE_PATH = "input/i.jpg"
 OUTPUT_PATH = "output/frame_out.jpg"
-YOLO_MODEL_PATH = "yolov8s.pt"
+YOLO_MODEL_PATH = "models/yolov8s.pt"
 
 os.makedirs("output", exist_ok=True)
 

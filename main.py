@@ -1,13 +1,13 @@
 import cv2
 import os
-from config import *
-from player_detection import get_detector
-from ball_detection import BallDetector
+from src.config import *
+from src.player_detection import get_detector
+from src.ball_detection import BallDetector
 # from field_map import create_2d_map
 
 INPUT_VIDEO = "input/r.mp4"
 OUTPUT_VIDEO = "output/video_out.avi"
-YOLO_MODEL_PATH = "yolov8s.pt"
+YOLO_MODEL_PATH = "models/yolov8s.pt"
 os.makedirs("output", exist_ok=True)
 
 # Carrega YOLO (jogadores + bola)
